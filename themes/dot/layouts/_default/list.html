@@ -1,0 +1,43 @@
+{{ define "main" }}
+
+  {{ "<!-- page title -->" | safeHTML }}
+  
+  {{ "<!-- /page title -->" | safeHTML }}
+
+  {{ "<!-- details page -->" | safeHTML }}
+  <section class="single section bg-gray pb-0">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-3">
+          <div class="mb-5 bg-white p-4 sticky-top">
+            <a href="{{ .Permalink }}">
+              <h4 class="mb-4">{{ .Title }}</h4>
+            </a>
+            <ul class="list-styled">
+              {{ range .Data.Pages }}
+              <li><a href="{{ .Permalink }}">{{ .Title }}</a></li>
+              {{ end }}
+            </ul>
+          </div>
+        </div>
+        <div class="col-lg-9">
+          <div class="p-5 bg-white">
+              <h2>{{ .Title }}</h2>
+               
+
+              <!-- <div class="bg-gray p-4">
+                  <h3 class="mt-0">Articlexxx</h3>
+                  <ul class="list-unstyled">
+                    {{ range .Data.Pages }}
+                    <li><a href="{{ .Permalink }}">{{ .Title }}</a></li>
+                    {{ end }}
+                  </ul>
+              </div>-->
+          </div>
+        </div> 
+      </div>
+    </div>
+  </section>
+  {{ "<!-- /details page -->" | safeHTML }}
+
+{{ end }}
