@@ -7,7 +7,7 @@ author: "Aruna"
  
 The following shows an example of how to use a smart switch device.
 
-Login to [Sinric] (https://sinric.pro/) and create a "Dimmable Switch" device.
+Login to [Sinric] (https://sinric.pro) and create a "Dimmable Switch" device.
 
 Copy the API key and device Id and update the sketch like below.
 

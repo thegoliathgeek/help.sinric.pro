@@ -8,7 +8,7 @@ weight: 1
 
 The following shows an example of how to use a smart switch device.
 
-Login to [Sinric] (https://gohugo.io/getting-started/installing/) and create a "Smart Socket" device.
+Login to [Sinric] (https://sinric.pro) and create a "Smart Socket" device.
 
 Copy the API key and device Id and update the sketch like below.
 
